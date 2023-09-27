@@ -12,6 +12,8 @@
 		CDE847C02AC417A3009366D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE847BF2AC417A3009366D8 /* Assets.xcassets */; };
 		CDE847C32AC417A3009366D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE847C22AC417A3009366D8 /* Preview Assets.xcassets */; };
 		CDE847CA2AC417CE009366D8 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE847C92AC417CE009366D8 /* PhotoVC.swift */; };
+		CDE847CD2AC4325E009366D8 /* PhotoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE847CC2AC4325E009366D8 /* PhotoApi.swift */; };
+		CDE847D02AC43288009366D8 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE847CF2AC43288009366D8 /* PhotoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		CDE847BF2AC417A3009366D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE847C22AC417A3009366D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDE847C92AC417CE009366D8 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		CDE847CC2AC4325E009366D8 /* PhotoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoApi.swift; sourceTree = "<group>"; };
+		CDE847CF2AC43288009366D8 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,11 @@
 		CDE847BA2AC4179D009366D8 /* PhotoAPI */ = {
 			isa = PBXGroup;
 			children = (
+				CDE847CB2AC43246009366D8 /* Model */,
+				CDE847D12AC43291009366D8 /* View */,
+				CDE847CE2AC43267009366D8 /* ViewModel */,
 				CDE847BB2AC4179D009366D8 /* PhotoAPIApp.swift */,
 				CDE847BD2AC4179D009366D8 /* ContentView.swift */,
-				CDE847C92AC417CE009366D8 /* PhotoVC.swift */,
 				CDE847BF2AC417A3009366D8 /* Assets.xcassets */,
 				CDE847C12AC417A3009366D8 /* Preview Content */,
 			);
@@ -68,6 +74,30 @@
 				CDE847C22AC417A3009366D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDE847CB2AC43246009366D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDE847CC2AC4325E009366D8 /* PhotoApi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDE847CE2AC43267009366D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CDE847CF2AC43288009366D8 /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDE847D12AC43291009366D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDE847C92AC417CE009366D8 /* PhotoVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE847BE2AC4179D009366D8 /* ContentView.swift in Sources */,
+				CDE847CD2AC4325E009366D8 /* PhotoApi.swift in Sources */,
 				CDE847BC2AC4179D009366D8 /* PhotoAPIApp.swift in Sources */,
 				CDE847CA2AC417CE009366D8 /* PhotoVC.swift in Sources */,
+				CDE847D02AC43288009366D8 /* PhotoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
